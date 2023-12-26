@@ -1,0 +1,6 @@
+body{
+  background-color: rgb(197, 135, 60);
+}
+.choiceBtn{
+  width: 100px; height: 50px; border-radius: 12px;
+}

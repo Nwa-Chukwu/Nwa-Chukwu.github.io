@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Side-Bar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/all.css">
+    </head>
+
+    <body>
+
+      <nav class="sidebar">
+
+        <div class="sidebar-top-wrapper">
+          <div class="sidebar-top">          
+            <img src="images/logo.jpg" alt="logo" class="logo">
+            <h3><span class="hide">Astra</span></h3>
+          </div>
+          <div class="expand-btn" id="btn"><i class="fa-solid fa-greater-than"></i></div>
+        </div>
+        <div class="search_wrapper">
+          <button type="button" class="search-btn" title="search-btn" id="search" onclick="runSearch()">
+            <i class="fa-brands fa-searchengin"></i>
+          </button>
+          <input type="search" placeholder="search..." class="search-box">
+        </div>
+
+        <div class="sidebar-profile">
+          <div class="avatar_wrapper">
+            <img class="avatar" src="images/profile.png.jpg" alt="Nwachukwu picture">
+            <div class="online_status"></div>
+          </div>
+          <section>
+            <div class="username">Chikei Nwachukwu</div>
+            <div class="email">chikei@gmail.com</div>
+          </section>
+        </div>
+
+        <div class="sidebar-links">
+          <h2>Main</h2>
+          <ul>
+            <li>
+              <a href="#dashboard" class="tooltip">
+                <i class="fa-solid fa-table-cells"></i>
+                <span class="nav-item">Dashboard</span>
+                <span class="tooltip_content">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#payments" class="tooltip">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <span class="nav-item">Payments</span>
+                <span class="tooltip_content">Payments</span>
+              </a>
+            </li>
+            <li>
+              <a href="#analytics" class="tooltip">
+                <i class="fa-solid fa-chart-line"></i>
+                <span class="nav-item">Analytics</span>
+                <span class="tooltip_content">Analytics</span>
+              </a>
+            </li>
+            <li>
+              <a href="#products" class="tooltip">
+                <i class="fa-solid fa-box-open"></i>
+                <span class="nav-item">Products</span>
+                <span class="tooltip_content">Products</span>
+              </a>
+            </li>
+            <li>
+              <a href="#reports" class="tooltip">
+                <i class="fa-solid fa-file-pen"></i>
+                <span class="nav-item">Reports</span>
+                <span class="tooltip_content">Reports</span>
+              </a>
+            </li>
+            <li>
+              <a href="#customers" class="tooltip">
+                <i class="fa-solid fa-people-group"></i>
+                <span class="nav-item">Customers</span>
+                <span class="tooltip_content">Customers</span>
+              </a>
+            </li>           
+          </ul>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="sidebar-links bottom-links">
+          <h2>Settings</h2>
+          <ul>
+            <li>
+              <a href="#settings" class="tooltip">
+                <i class="fa-solid fa-gear"></i>
+                <span class="nav-item">Settings</span>
+                <span class="tooltip_content">Settings</span>
+              </a>
+            </li> 
+            <li>
+              <a href="#billings" class="tooltip">
+                <i class="fa-solid fa-building-circle-check"></i>
+                <span class="nav-item">Billings</span>
+                <span class="tooltip_content">Billings</span>
+              </a>
+            </li> 
+            <li>
+              <a href="#notifications" class="tooltip">
+                <i class="fa-solid fa-bell"></i>
+                <span class="nav-item">Notifications</span>
+                <span class="tooltip_content">Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#logout" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              
+                <span class="nav-item">Logout</span>
+                <span class="tooltip_content">Logout</span>
+              </a>
+            </li> 
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="main-content">
+        <div class="container">
+          <h1>CHIKEI BAR</h1>
+          <h1>RIGHT SIDE</h1>
+        </div>
+      </div>
+
+    </body>
+
+    <script>
+
+      let serchBtn = document.querySelector("search");
+      let expandBtn = document.querySelector("btn");
+      let sidebar = document.querySelector(".sidebar");
+      let searchBox = document.querySelector(".search-box")
+
+
+      btn.onclick = function () {
+        sidebar.classList.toggle("active")
+      };
+
+
+    </script>
+
+  </html>

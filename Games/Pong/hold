@@ -1,0 +1,31 @@
+function changeDirection(event){
+
+  const keyPressed = event.keyCode;
+  const pad1Up = 87;
+  const pad1Down = 83;
+  const pad2Up = 38;
+  const pad2Down = 40;
+
+  switch (keyPressed){
+    case (pad1Up):
+      if (pad1.y > 0) {
+        pad1.y -= padSpeed;
+      }
+      break;
+    case (pad1Down):
+      if (pad1.y < gameHeight - pad1.height) {
+        pad1.y += padSpeed;
+      }
+      break;
+    case (pad2Up):
+      if (pad2.y > 0) {
+        pad2.y -= padSpeed;
+      }
+      break;
+    case (pad2Down):
+      if (pad2.y < gameHeight - pad2.height) {
+        pad2.y += padSpeed;
+      }
+      break;
+  }
+};

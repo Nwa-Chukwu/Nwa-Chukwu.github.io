@@ -1,0 +1,24 @@
+.timerBtn{
+  width: 100px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 12px;
+  background-color: rgb(43, 19, 19);
+  color: #f5f7f8;
+  font-family: 'Times New Roman';
+  font-size: large;
+  cursor: pointer;
+}
+
+#timeDisplay{
+  font-size: 50px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#container{
+  text-align: center;
+  background-color: rgb(236, 127, 191);
+  border: 3px solid;
+  border-radius: 25px;
+}
