@@ -98,8 +98,6 @@ function removeScale(){
 }
 
 /*=========Generate PDF=========*/
-//pdf generated area
-let areaCv = document.getElementById("area-cv");
 
 let resumeButton = document.getElementById("resume-button");
 
@@ -116,7 +114,12 @@ let opt = {
 
 //call function for areaCv and html2pdf
 function generateResume(){
-  html2pdf(areaCv, opt);
+
+  let areaCv = document.getElementById("area-cv");
+
+  html2pdf()
+  .from(areaCv)
+  .save(opt);
 }
 //click function
 resumeButton.addEventListener("click", () => {
